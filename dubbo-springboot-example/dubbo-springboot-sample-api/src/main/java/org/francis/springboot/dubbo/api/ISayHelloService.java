@@ -1,10 +1,17 @@
 package org.francis.springboot.dubbo.api;
 
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+
 /**
  * @author Franc1s
  * @date 2022/11/13
  * @apiNote
  */
+@Path("/")
 public interface ISayHelloService {
-    public String sayHello();
+
+    @GET
+    @Path("/say")
+    String sayHello();
 }

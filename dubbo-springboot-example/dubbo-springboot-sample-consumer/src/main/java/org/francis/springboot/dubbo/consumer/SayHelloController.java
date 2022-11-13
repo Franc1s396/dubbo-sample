@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class SayHelloController {
-    @DubboReference
+    @DubboReference(registry = {"shanghai","hunan"},protocol = "dubbo",loadbalance = "")
     ISayHelloService sayHelloService;
     @GetMapping("/say")
     public String say(){
