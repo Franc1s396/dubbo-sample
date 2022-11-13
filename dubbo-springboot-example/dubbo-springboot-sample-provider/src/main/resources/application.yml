@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: dubbo-provider
+dubbo:
+  protocol:
+    name: dubbo
+    # -1:不指定端口号，让系统生成
+    port: -1
+  registry:
+    address: nacos://localhost:8848
+    # 多注册中心配置
+#  registries:
+#    shanghai:
+#      address: nacos://localhost:8848
+#    hunan:
+#      address: nacos://localhost:8848

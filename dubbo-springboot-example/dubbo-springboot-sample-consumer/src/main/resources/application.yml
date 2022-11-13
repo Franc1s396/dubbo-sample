@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: dubbo-consumer
+dubbo:
+  registry:
+    address: nacos://localhost:8848
+server:
+  port: 8081

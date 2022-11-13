@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: dubbo-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+dubbo:
+  scan:
+    # 扫描dubbo的service包
+    base-packages: org.francis.dubbo.provider.service
+  protocol:
+    port: 20882
+    name: dubbo
