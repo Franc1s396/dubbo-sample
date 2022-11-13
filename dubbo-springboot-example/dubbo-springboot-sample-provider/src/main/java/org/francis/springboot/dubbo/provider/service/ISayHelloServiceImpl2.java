@@ -11,10 +11,10 @@ import org.francis.springboot.dubbo.api.ISayHelloService;
  */
 
 //@DubboService(registry = {"shanghai","hunan"})
-@DubboService(version = "1.0")
-public class ISayHelloServiceImpl implements ISayHelloService {
+@DubboService(version = "2.0")
+public class ISayHelloServiceImpl2 implements ISayHelloService {
     @Override
     public String sayHello() {
-        return "hello";
+        return "[Version2.0]hello";
     }
 }
